@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+           <h1>Health Center</h1>
+        </div>
+     </header>
+     <div id="patientsList">
+        <div id="listHeader">
+           <h3>Name</h3>
+           <h3>ID</h3>
+           <h3>Last Edited</h3>
+           <div id="listHeaderButtons">
+              <p id="listHeaderButton_Plus">+</p>
+           </div>
+        </div>
+        <div class="row">
+          <span>Xander Levy</span>
+          <span>764483</span>
+          <span>05-28-08</span>
+           <div>
+             <button onclick="window.location.href = '/new/intake-form'" class="rowButtonNew">New</button>
+             <button>Historic</button>
+          </div>
+        </div>
+     </div>
+     <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

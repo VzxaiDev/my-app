@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/intake-form-style.css">
+</head>
+<body>
+    <header>
+        <h4>New Patient</h1>
+            <button id="saveButton">Save</button>
+    </header>
+    <main>
+        <h1>Med Records For Health Sci</h1>
+
+        <h2 class="center">Patient Intake Form</h2>
+        <p data-sub="true" class="center"></p>
+
+        <h3>Critical Info</h3>
+
+        <div class="row">
+        <div class="labelAndInput">
+            <label>Name</label>
+            <input id="name" class="center" type="text"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>DOB</label>
+            <input data-inputed="" data-dob="true" class="center" type="text" value="MM-DD-YY"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>Age</label>
+            <input style="font-weight: bold;" data-age="true" class="center" disabled="true"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>Patient ID#</label>
+            <input class="center" type="text"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>Height</label>
+            <input class="center" type="text"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>Weight</label>
+            <input class="center" type="text"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>Gender</label>
+            <input class="center" type="text"></input>
+        </div>
+        </div>
+
+        <h3>Critical Info</h3>
+
+        <div class="row">
+        <div class="labelAndInput" style="width:100%;">
+            <label>Primary Reason</label>
+            <textarea class="center" type="text"></textarea>
+        </div>
+        </div>
+
+        <h3>Vitals</h3>
+
+        <div class="row">
+        <div class="labelAndInput">
+            <label>Temperature</label>
+            <input class="center" type="text"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>Pulse</label>
+            <input data-pulse="true" class="center" value="#BPM" type="text"></inputd>
+        </div>
+        <div class="labelAndInput">
+            <label>Respiratory Rate</label>
+            <input data-rr="true" class="center" value="#BPM" type="text"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>Breathing Sounds</label>
+            <input class="center" type="text"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>Blood Pressure</label>
+            <input class="center" type="text"></input>
+        </div>
+        <div class="labelAndInput">
+            <label>SPO2</label>
+            <input class="center" type="text"></input>
+        </div>
+        </div>
+
+        <div id="blur">
+        <div id="blurColor"></div>
+        </div>
+    </main>
+    <script type="text/javascript" src="../js/intake-form.js"></script>
+</body>
+</html>

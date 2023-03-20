@@ -1,0 +1,96 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+header{
+  height: 55px;
+}
+
+#logo{
+  height: 100%;
+  width: 335px;
+}
+
+#logo h1{
+   padding: 10px;
+}
+
+#patientsList{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  padding-top: 0px;
+}
+
+#listHeader{
+  background: white; 
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid;
+  display: flex;
+  flex-direction: row;
+}
+
+#listHeader *{
+  width: 100%;
+}
+
+#listHeaderButtons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#listHeaderButton_Plus{
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+#listHeaderButton_Plus:hover{
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.row{
+  display: flex;
+  margin-top: 5px;
+}
+
+.row *{
+  width: 100%;
+}
+
+.row div{
+  display: flex;
+  gap: 5px;
+}
+
+.row div button{
+  opacity: 0;
+  transition: 0.3s;
+  width: 50%;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.row div button:hover{
+  transform: scale(0.9);
+}
+
+.row:hover div button{
+  opacity: 1;
+}
+
+.rowButtonNew{
+  background: #0096FF;
+}
