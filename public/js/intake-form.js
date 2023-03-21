@@ -160,17 +160,19 @@ saveButton.addEventListener('click', ()=>{
         redirect: 'follow'
     };
 
-    fetch("http://localhost:3000/api/create", requestOptions)
+    let loc ="http://" + window.location.host + "/api/save-patient-form";
+
+    fetch(loc, requestOptions)
     .then(response => response.text())
     .then(result => console.log(JSON.parse(result)))
     .catch(error => console.log('error', error));
 });
 
 function output(){
-    const allInputs = document.querySelectorAll('input');
+    let allInputs = document.querySelectorAll('input');
     let listOfValues = {};
-    for(let i = 0; i <allInputs.length; i++){
-        const elm = allInputs[i];
+    for(let i = 0; i < allInputs.length; i++){
+        let elm = allInputs[i];
         listOfValues[i] = elm.value;
     }
     return JSON.stringify(listOfValues);
