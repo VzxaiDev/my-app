@@ -1,7 +1,7 @@
 let plus = document.getElementById('listHeaderButton_Plus');
 
 plus.addEventListener('click', ()=>{
-    window.location.href = '/new/intake-form';
+    window.location.href = '/new/patient';
 });
 
 
@@ -16,16 +16,16 @@ async function hydrate(){
     try{
         let fetchResult = await fetch(window.location.href + "api/hydrate/all-patients", requestOptions);
         let response = await fetchResult.text();
-        console.log(response)
         
         let allPatients = JSON.parse(response);
 
         let home = document.querySelector("#patientsList");
+
         for(let i = 0; i < allPatients.length; i++){
             let div = document.createElement('div');
             let patient = allPatients[i];
             div.className = 'row';
-            div.innerHTML ='<span>'+patient.name+'</span><span>764483</span><span>05-28-08</span><div><button class="rowButtonNew">New</button><button>Historic</button></div>'
+            div.innerHTML ='<span>'+patient.name+'</span><span>'+patient.patientID+'</span><span>'+patient.dob+'</span><div><button class="rowButtonNew">New</button><button>Historic</button></div>'
             home.appendChild(div);
         }
 
